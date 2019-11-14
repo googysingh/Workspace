@@ -1,0 +1,26 @@
+package xtraprograms;
+
+public class Singleton {
+public static void main(String args[])
+{
+	
+}
+	private static Singleton obj=null;
+	int a=10;
+	private int b=20;
+	
+	private Singleton() {
+		
+	}
+    
+	static{
+		Singleton s1= new Singleton();
+		s1.test();
+	}
+
+
+	public void test(){
+		System.out.println("Test");
+	}
+
+}

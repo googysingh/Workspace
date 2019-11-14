@@ -1,0 +1,13 @@
+import xtraprograms.Singleton;
+
+public class Test {
+
+	public static void main(String[] args) {
+		int n = 10;
+		String t="Test";
+		System.out.println(n);
+		System.out.println(t);
+
+	}
+
+}

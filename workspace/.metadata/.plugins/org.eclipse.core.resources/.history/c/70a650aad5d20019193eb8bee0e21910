@@ -1,0 +1,22 @@
+package xtraprograms;
+import java.util.Random;
+
+public class Randomnumber{
+public static void main(String args[])
+{
+	Testclass a = new Testclass();
+	a.setI(5);
+	Testclass b= new Testclass();
+	System.out.println(b.getI());
+	/*int b=Random();
+	System.out.println(b);*/
+}
+public static int Random()
+{
+	int a=10;
+	Random rand= new Random();
+	a=rand.nextInt(1000);
+	return a;
+}
+}
+

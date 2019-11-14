@@ -1,0 +1,16 @@
+package xtraprograms;
+
+public class Randomnumber{
+public static void main(String args[])
+{
+	int b=Random();
+	System.out.println(b);
+}
+}
+
+public static int Random()
+{
+	java.util.Random rand= new Random();
+	int a=rand.nextInt(1000);
+	return a;
+}

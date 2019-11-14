@@ -1,0 +1,33 @@
+package objectrepository;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class productSearch {
+
+	WebDriver driver;
+
+	public productSearch(WebDriver driver) {
+		
+		this.driver = driver;
+	}
+
+	//By loginbutton = By.xpath("//a[contains(text(),'Login & Signup')]");
+	By SearchProduct = By.xpath("//input[@placeholder='Search for products, brands and more']");
+	By passWord = By.xpath("//input[@type=\"password\"]");
+	By Login = By.className("_2zrpKA");
+
+	public WebElement searchProduct(String productName) {
+		return driver.findElement(SearchProduct).sendKeys(productName).click();
+	}
+
+	public WebElement username() {
+		return driver.findElement(userName);
+	}
+
+	public WebElement password() {
+		return driver.findElement(passWord);
+	}
+
+}

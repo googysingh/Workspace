@@ -1,0 +1,21 @@
+public class Test {
+
+	public static void main(String[] args) {
+		String a = "ab**cd";
+		String b= "sm*eil*ly";
+		Stirng c="sm***eil*ly";
+		System.out.println(t.substring(3,7));
+		char star='*';
+		/*for(int i=0;i<str.length()-1;i++) {
+			if(str.charAt(1)==star) {
+				if(str.charAt(i+1)==star) {
+					text=
+				}
+			}
+		}*/
+		System.out.println(a.indexOf(star));
+		System.out.println((a.lastIndexOf(star)));
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package classdev;
+// It is possible to access non static properties from non static method directly
+public class P5 {
+int i;
+float f;
+	public static void main(String[] args)
+	{
+		System.out.println("Main Stated");
+	}
+}

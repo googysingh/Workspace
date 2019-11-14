@@ -1,0 +1,12 @@
+package collections;
+
+import java.util.HashMap;
+
+public class Hashmap {
+public static void main(String args[])
+{
+	HashMap<Integer, Integer> hm= new HashMap<Integer,Integer>();
+	hm.put(1, 10);
+	System.out.println(hm);
+	}
+}

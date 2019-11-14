@@ -1,0 +1,30 @@
+package collections;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class List {
+public static void main(String args[])
+{
+	/*int [] myarr= new int[10];
+	Scanner read=new Scanner(System.in);
+	System.out.println("Enter 10 number");
+	for(int i=0;i<=9;i++)
+	{
+		myarr[i]=read.nextInt();
+	}
+	read.close();
+	System.out.println("Reverse order is");
+	for(int i=9;i>=0;i--)
+	{
+		System.out.println(myarr[i]);
+	}*/
+	System.out.println(my);
+	ArrayList list = new ArrayList();
+	list.add("Gurpreet");
+	list.add("Singh");
+	
+	System.out.println(list.get(0);
+	
+}
+}

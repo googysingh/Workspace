@@ -1,0 +1,11 @@
+public class Test {
+
+	public static void main(String[] args) {
+		int n = 10;
+		String t = String.valueOf(n);
+		System.out.println(n);
+		System.out.println(t);
+
+	}
+
+}

@@ -1,0 +1,16 @@
+package demo;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class TestFacebook {
+
+	public static void main(String[] args) {
+		//Initiate firefox Driver
+		System.setProperty("webdriver.gecko.driver", "D:\\Automation\\My Auto\\geckodriver.exe");
+		WebDriver driver=new FirefoxDriver();
+		driver.get("http://www.fb.com");
+		driver.close();
+	}
+
+}

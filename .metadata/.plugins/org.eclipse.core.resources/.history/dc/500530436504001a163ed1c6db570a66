@@ -1,0 +1,12 @@
+package objectrepository;
+
+import org.openqa.selenium.WebDriver;
+
+public class flipkartlogin {
+
+	WebDriver driver;
+	public void flipkartloginpage(WebDriver driver) {
+		this.driver=driver;
+	}
+	By.xpath
+}

@@ -1,0 +1,58 @@
+package Flipkart;
+
+import java.util.Iterator;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+import objectrepository.flipkartlogin;
+import objectrepository.logout;
+import objectrepository.productSearch;
+
+public class flipkart {
+
+	@Test
+	public void login() throws InterruptedException {
+		
+		
+		System.setProperty("webdriver.chrome.driver", "D:\\Automation\\Selenium\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+		
+		driver.get("https://www.flipkart.com/");
+		driver.manage().window().maximize();
+		System.out.println(driver.getTitle());
+		Thread.sleep(2000);
+		
+		//Login Flow
+		flipkartlogin flogin = new flipkartlogin(driver);
+		flogin.username().sendKeys("8951017950");
+		flogin.password().sendKeys("Passw0rd123$", Keys.ENTER);
+		Thread.sleep(1000);
+		System.out.println(driver.getTitle());
+				
+		//Product search
+		productSearch pd = new productSearch(driver);
+		pd.searchProduct().sendKeys("Apple iphone", Keys.ENTER);
+		Thread.sleep(1000);
+		pd.productDetail().click();
+		Set<String> ids=driver.getWindowHandles();
+		Iterator<String> it=ids.iterator();
+		
+		Thread.sleep(1000);
+		driver.switchTo().window(productPage); 
+		Thread.sleep(1000);
+		
+		//Logout 
+		logout lg = new logout(driver);
+		lg.flipkartLogout();
+		driver.close();
+
+	}
+
+}

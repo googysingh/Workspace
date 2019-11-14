@@ -1,0 +1,32 @@
+package objectrepository;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class flipkartlogin {
+
+	WebDriver driver;
+
+	public flipkartlogin(WebDriver driver) {
+		this.driver = driver;
+	}
+
+	By loginbutton = By.xpath("//a[contains(text(),'Login & Signup')]");
+	By username = By.xpath(xpathExpression);
+	By password = By.xpath(xpathExpression);
+	By Login = By.xpath(xpathExpression);
+
+	public WebElement Username() {
+		return driver.findElement(username);
+	}
+
+	public WebElement Username() {
+		return driver.findElement(username);
+	}
+
+	public WebElement Username() {
+		return driver.findElement(username);
+	}
+
+}

@@ -1,0 +1,44 @@
+package objectrepository;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class addtocart {
+	
+	
+	WebDriver driver;
+
+	public addtocart(WebDriver driver) {
+
+		this.driver = driver;
+	}
+
+	By addtocart = By.xpath("//button[contains(text(),'ADD TO CART')]");
+	By placeOrder = By.xpath("//span[contains(text(),'Place Order')]");
+	
+	By addnewaddress = By.xpath("//div[contains(text(),'Add a new address')]");
+	
+	By newName= By.xpath("//input[@name='name']");
+	By newMobile= By.xpath("//input[@name='name']");
+	By newPin= By.xpath("//input[@name='name']");
+	By newAddress= By.xpath("//input[@name='name']");
+	By newLocality= By.xpath("//input[@name='name']");
+	By newCity= By.xpath("//input[@name='name']");
+	By newState= By.xpath("//select[@name='state']");
+	By newAddtype= By.cssSelector("div._2o59RR");
+
+	public WebElement SearchProduct() {
+		return driver.findElement(addtocart);
+	}
+
+	public WebElement Placeorder() {
+		return driver.findElement(placeOrder);
+	}
+	public void Addnewaddress(WebDriver driver,String Name) {
+		
+		driver.findElement(addnewaddress).click();
+		Thread.sleep(1000);
+		driver.findElement(newName).sendKeys(Name);
+	}
+}

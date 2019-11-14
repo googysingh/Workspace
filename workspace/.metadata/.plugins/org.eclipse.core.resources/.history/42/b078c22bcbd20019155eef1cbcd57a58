@@ -1,0 +1,21 @@
+package xtraprograms;
+
+import java.util.Scanner;
+
+public class Countnoofdigit {
+public static void main(String args[])
+{
+	int n,r;
+	Scanner read=new Scanner(System.in);
+	System.out.println("Enter numbers");
+	n= read.nextLine();
+	read.close();
+	r=count(n);
+			
+}
+public static int count(int a)
+{
+	int Arr[]= new int[a];
+	return r;
+}
+}

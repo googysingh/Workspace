@@ -1,0 +1,17 @@
+import java.awt.datatransfer.StringSelection;
+
+import org.apache.commons.collections4.functors.StringValueTransformer;
+
+import xtraprograms.Singleton;
+
+public class Test {
+
+	public static void main(String[] args) {
+		int n = 10;
+		String t=StringValueTransformer<n>;
+		System.out.println(n);
+		System.out.println(t);
+
+	}
+
+}

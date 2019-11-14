@@ -1,0 +1,24 @@
+package xtraprograms;
+
+public class Singleton {
+
+	private static Singleton obj=null;
+	
+	private Singleton() {
+		
+	}
+	
+	public  static Singleton init(){
+		if(obj==null) {
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			obj = new Singleton();
+		}
+		return obj;
+	}
+
+}
