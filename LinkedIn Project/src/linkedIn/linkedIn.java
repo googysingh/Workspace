@@ -34,7 +34,6 @@ public class linkedIn {
 		driver.findElement(By.xpath("//input[@id='password']")).sendKeys("Password", Keys.ENTER);
 		error = driver.findElement(By.xpath("//div[@id='error-for-username']")).getText();
 		System.out.println(error);
-
 	}
 
 	@AfterTest

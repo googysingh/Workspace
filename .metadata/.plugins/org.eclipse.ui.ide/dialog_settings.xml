@@ -7,6 +7,10 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\workspace\assignment_n"/>
+			<item value="D:\workspace\assignment_19"/>
+			<item value="D:\workspace\assignment_18"/>
+			<item value="D:\workspace\assignment_17"/>
 			<item value="D:\workspace\assignment_16"/>
 			<item value="D:\workspace\assignment_15"/>
 			<item value="D:\workspace\assignment_14"/>
@@ -23,7 +27,6 @@
 			<item value="D:\workspace\assignment_03"/>
 			<item value="D:\workspace\assignment_02"/>
 			<item value="D:\workspace\assignment_01"/>
-			<item value="D:\New folder\workspace\workspace"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
 			<item value=""/>
@@ -46,7 +49,15 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Playground\myproject54"/>
 			<item value="D:\OneDrive\workspace\stock-analysis"/>
 		</list>
+	</section>
+	<section name="SaveAsDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="429"/>
+		<item key="DIALOG_Y_ORIGIN" value="8"/>
+		<item key="DIALOG_WIDTH" value="525"/>
+		<item key="DIALOG_HEIGHT" value="580"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 </section>
